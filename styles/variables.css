@@ -6,7 +6,7 @@
   --nav-color: #353430;
   --nav-hover-color: rgba(50, 49, 45, 0.4);
   --header-title-color: rgb(255, 194, 230);
-  --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-text-color: rgb(53, 52, 48);
   --main-text-color: rgb(53, 52, 48);
   --main-gap: 10px;
@@ -15,13 +15,13 @@
   --main-line-height: 23.4px;
   --section-heading-color: rgb(53, 52, 48);
   --footer-title-color: rgb(255, 194, 230);
-  --footer-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --footer-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (width >= 768px) {
   :root {
     --main-gap: 20px;
-    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --footer-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

@@ -117,7 +117,6 @@ body {
   font-size: var(--header-title-size);
   font-weight: 700;
   line-height: 82.5%;
-  font-size: 116px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -230,10 +229,6 @@ footer {
 
 @media (width >=768px) {
 
-   .header_title {
-    font-size: 120px;
-   }
-
   .header_text {
     inline-size: 364px;
     justify-self: end;
@@ -332,10 +327,6 @@ footer {
 }
 
 @media (width >=1024px) {
-
-  .header_title {
-    font-size: 157px;
-   }
 
   .header__theme-menu-list {
     flex-direction: row;
