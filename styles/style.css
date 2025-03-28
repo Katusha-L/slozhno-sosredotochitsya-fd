@@ -226,6 +226,7 @@ footer {
   min-block-size: 647px;
   margin-top: 50px;
   margin-bottom: 0;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 @media (width >=768px) {
@@ -233,13 +234,16 @@ footer {
   .header_text {
     inline-size: 364px;
     justify-self: end;
-    margin-top: 100px;
   }
 
   .main_content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap:var(--main-gap);
+  }
+
+  .main_content_title {
+    max-inline-size: 236px;
   }
 
   .content_hormones {
@@ -266,10 +270,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr min-content;
+    gap:var(--main-gap);
   }
 
   .unit_title {
-    max-inline-size: 236px;
     grid-row: span 2;
     font-size: var(--main-font-size);
   }
