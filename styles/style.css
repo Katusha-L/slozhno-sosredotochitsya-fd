@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  block-size: 100vw;
+  block-size: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: var(--main-gap);
@@ -213,7 +213,7 @@ body {
 }
 
 footer {
-  block-size: 100vw;
+  block-size: 100vh;
 }
 
 .footer_title {
