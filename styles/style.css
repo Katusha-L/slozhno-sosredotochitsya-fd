@@ -230,7 +230,6 @@ footer {
 }
 
 @media (width >=768px) {
-
   .header_text {
     inline-size: 364px;
     justify-self: end;
@@ -239,7 +238,7 @@ footer {
   .main_content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap:var(--main-gap);
+    gap: var(--main-gap);
   }
 
   .main_content_title {
@@ -270,7 +269,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr min-content;
-    gap:var(--main-gap);
+    gap: var(--main-gap);
   }
 
   .unit_title {
@@ -332,11 +331,9 @@ footer {
   footer {
     block-size: min(768px);
   }
-
 }
 
 @media (width >=1024px) {
-
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
@@ -370,9 +367,8 @@ footer {
   .block_gadgets {
     grid-row: 2;
   }
-  
+
   footer {
     block-size: min(1024px);
   }
-  
 }
