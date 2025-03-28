@@ -126,6 +126,7 @@ body {
   margin-top: 55px;
   color: var(--header-text-color);
   font-weight: 700;
+  text-shadow: 4px 4px 0 var(--accent-color);
   background-color: var(--accent-color);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
@@ -238,6 +239,7 @@ footer {
   .main_content {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap:var(--main-gap);
   }
 
   .content_hormones {
@@ -266,12 +268,13 @@ footer {
     grid-template-rows: 1fr min-content;
   }
 
-  .main_content_title {
+  .unit_title {
     max-inline-size: 236px;
     grid-row: span 2;
+    font-size: var(--main-font-size);
   }
 
-  .main_content_subtitle {
+  .unit_subtitle {
     grid-column: 2;
     align-self: end;
   }
@@ -321,6 +324,11 @@ footer {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+
+  footer {
+    block-size: min(768px);
+  }
+
 }
 
 @media (width >=1024px) {
@@ -335,8 +343,6 @@ footer {
   .header_text {
     inline-size: 491px;
     justify-self: end;
-    margin-top: 114px;
-    margin-bottom: 0;
   }
 
   .main_block {
@@ -360,4 +366,9 @@ footer {
   .block_gadgets {
     grid-row: 2;
   }
+  
+  footer {
+    block-size: min(1024px);
+  }
+  
 }
