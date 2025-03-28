@@ -1,39 +1,57 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-dark {
   --accent-color:rgb(255, 0, 112);
-  --main-bg-color: rgb(245,245,245);
+  --main-bg-color: rgb(0,0,40); 
   --bg-image: url(../images/cover-image-dark.png);
   --nav-color:rgb(255, 0, 112);
   --nav-hover-color: rgba(255, 0, 112, 0.4);
   --header-title-color:rgb(219,0,255);
+  --header-text-color:rgb(0,0,40); 
   --main-text-color:rgb(241,178,206);
   --main-heading-color:rgb(255, 0, 112);
+  --main-title-color:rgb(255, 0, 112);
   --section-heading-color: rgb(0,0,40);
   --footer-title-color:rgb(219,0,255);
-}
-
-@media (prefers-color-sheme: dark) {
-  :root {
-   --accent-color:rgb(255, 0, 112);
-  --main-bg-color: rgb(245,245,245);
-  --bg-image: url(../images/cover-image-dark.png);
-  --nav-color:rgb(255, 0, 112);
-  --nav-hover-color: rgba(255, 0, 112, 0.4);
-  --header-title-color:rgb(219,0,255);
-  --main-text-color:rgb(241,178,206);
-  --main-heading-color:rgb(255, 0, 112);
-  --section-heading-color: rgb(0,0,40);
-  --footer-title-color:rgb(219,0,255);
-  }
 }
 
 .theme-dark .header_rec {
   display:block;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color:rgb(255, 0, 112);
+    --main-bg-color: rgb(0,0,40); 
+    --bg-image: url(../images/cover-image-dark.png);
+    --nav-color:rgb(255, 0, 112);
+    --nav-hover-color: rgba(255, 0, 112, 0.4);
+    --header-title-color:rgb(219,0,255);
+    --header-text-color:rgb(0,0,40); 
+    --main-text-color:rgb(241,178,206);
+    --main-heading-color:rgb(229, 57, 132);
+    --main-title-color:rgb(255, 0, 112);
+    --section-heading-color: rgb(0,0,40);
+    --footer-title-color:rgb(219,0,255);
+  }
+  .header_rec {
+    display:block;
+  }
+  
+  }
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
 
 
