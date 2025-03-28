@@ -1,18 +1,17 @@
-
 :root.theme-light {
   --accent-color: #ff8dcb;
   --main-bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
-  --nav-color:rgb(53, 52, 48);
+  --nav-color: rgb(53, 52, 48);
   --nav-hover-color: rgba(50, 49, 45, 0.4);
-  --header-title-color:rgb(255, 194, 230);
-  --main-text-color:rgb(53, 52,48);
-  --main-heading-color:rgb(53, 52, 48);
-  --main-title-color:rgb(53, 52, 48);
+  --header-title-color: rgb(255, 194, 230);
+  --main-text-color: rgb(53, 52, 48);
+  --main-heading-color: rgb(53, 52, 48);
+  --main-title-color: rgb(53, 52, 48);
   --section-heading-color: rgb(53, 52, 48);
-  --footer-title-color:rgb(255, 194, 230);
+  --footer-title-color: rgb(255, 194, 230);
 }
 
 .theme-light .header_rec {
-  display:none;
+  display: none;
 }
