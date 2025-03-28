@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  inline-size: 100vh;
+  block-size: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: var(--main-gap);
@@ -111,7 +111,6 @@ body {
 }
 
 .header_title {
-  margin: 0;
   color: var(--header-title-color);
   font-family: IBM Plex Mono;
   font-size: var(--header-title-size);
@@ -123,7 +122,6 @@ body {
 .header_text {
   align-self: center;
   justify-self: center;
-  margin-top: 55px;
   color: var(--header-text-color);
   font-weight: 700;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -214,7 +212,7 @@ body {
 }
 
 footer {
-  inline-size: 100vh;
+  block-size: 100vh;
 }
 
 .footer_title {
@@ -353,7 +351,7 @@ footer {
   }
 
   .main_content_title {
-    grid-row: 1;
+    max-inline-size: 315px;
   }
 
   .block_multi {
