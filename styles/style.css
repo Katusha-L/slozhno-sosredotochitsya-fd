@@ -1,26 +1,21 @@
 .page {
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--main-bg-color);
-}
-
-body {
-  min-inline-size: 375px;
-  max-inline-size: 1024px;
   margin: 0 auto;
   font-size: var(--main-font-size);
   font-family: var(--main-font-family), monospace;
   line-height: var(--main-line-height);
   background-color: var(--main-bg-color, #fff);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: var(--bg-image);
 }
 
 .header {
   block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: var(--main-gap);
-  background-image: var(--bg-image);
 }
 
 .header_theme-menu {
@@ -48,8 +43,8 @@ body {
   inset-inline-end: 28px;
   inset-block-start: 25px;
   color: var(--accent-color);
-  padding-right: 20px;
-  padding-bottom: 20px;
+  right: 46px;
+  bottom: 20px;
 }
 
 .header_rec::after {
@@ -59,7 +54,7 @@ body {
   background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
-  filter: drop-shadow(0 0 4px var(--accent-color));
+  box-shadow: 0 0 4px 2px var(--accent-color);
   left: 38px;
   top: 5px;
 }
@@ -71,7 +66,7 @@ body {
   list-style-type: none;
   padding-block-start: 30px;
   gap: var(--main-gap);
-  font-family: var(--main-font-family);
+  font-family: var(--main-font-family), monospace;
   margin-top: 40px;
 }
 
@@ -79,7 +74,7 @@ body {
   padding: 0 13px 0 13px;
   border: none;
   color: var(--nav-color);
-  font-family: "IBM Plex Mono" Bold Regular;
+  font-family: var(--main-font-family), monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -88,14 +83,15 @@ body {
   text-transform: lowercase;
   width: 70px;
   height: 26px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--nav-hover-color);
+  outline: 1px solid var(--nav-hover-color);
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+  border: none;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--nav-color);
@@ -112,7 +108,7 @@ body {
 
 .header_title {
   color: var(--header-title-color);
-  font-family: IBM Plex Mono;
+  font-family: var(--main-font-family), monospace;
   font-size: var(--header-title-size);
   font-weight: 700;
   line-height: 82.5%;
@@ -124,7 +120,6 @@ body {
   justify-self: center;
   color: var(--header-text-color);
   font-weight: 700;
-  text-shadow: 4px 4px 0 var(--accent-color);
   background-color: var(--accent-color);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
@@ -144,7 +139,6 @@ body {
 .content {
   display: block;
   padding: 0 20px 0 20px;
-  margin-top: 50px;
   line-height: var(--main-line-height);
   font-size: var(--main-font-size);
 }
@@ -163,19 +157,22 @@ body {
 .main_content_title {
   color: var(--main-title-color);
   font-size: var(--main-font-size);
-  margin-bottom: 20px;
+  margin-block-start: 50px;
+  margin-block-end: 20px;
+
 }
 
 .content_card_title {
   font-size: var(--main-font-size);
-  block-size: 23px;
   color: var(--section-heading-color);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
+  margin-block-start: 20px;
+  
 }
 
 .content_card_text {
   color: var(--main-text-color);
-  margin-bottom: 10px;
+  margin-block-end: 20px;
 }
 
 .link_word {
@@ -189,24 +186,11 @@ body {
 }
 
 .link_word:focus {
-  outline: 1px solid var(--main-text-color);
-  border-bottom: none;
+  outline: none;
 }
 
 .link_word:focus-visible {
   outline: 1px solid var(--main-text-color);
-}
-
-.main_block {
-  margin-top: 50px;
-}
-
-.main_unit {
-  margin-top: 50px;
-}
-
-.gallery {
-  margin-top: 50px;
 }
 
 .gallery_image {
@@ -215,11 +199,14 @@ body {
 }
 
 .gallery-heading {
-  margin-bottom: 20px;
+  margin-block-start: 50px;
+  margin-block-end: 20px;
 }
 
-footer {
+.footer_block {
   block-size: 100vh;
+  min-block-size: 668px;
+  margin-block-start: 50px;
 }
 
 .footer_title {
@@ -228,10 +215,8 @@ footer {
   align-items: center;
   font-size: var(--footer-title-size);
   color: var(--footer-title-color);
-  min-block-size: 647px;
-  margin-top: 50px;
-  margin-bottom: 0;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 0 var(--accent-color);
+  block-size: 100vh;
 }
 
 @media (width >=768px) {
@@ -244,6 +229,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--main-gap);
+    grid-auto-flow: column;
   }
 
   .main_content_title {
@@ -257,6 +243,7 @@ footer {
   .main_block {
     grid-template-rows: repeat(4, min-content);
     gap: var(--main-gap);
+    grid-auto-flow: row;
   }
 
   .block_multi {
@@ -276,6 +263,7 @@ footer {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr min-content;
     gap: var(--main-gap);
+    grid-auto-flow: column;
   }
 
   .unit_title {
