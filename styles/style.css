@@ -153,6 +153,7 @@
   color: var(--main-title-color);
   font-size: var(--main-font-size);
   margin-block-start: 50px;
+  max-inline-size: 315px;
 }
 
 .content_card_title {
@@ -243,6 +244,7 @@
   .main_content_title {
     margin-block-start: 0;
     margin-block-end: 20px;
+    max-inline-size: 236px;
   }
 
   .content_card_title:first-child {
@@ -371,7 +373,6 @@
 
   .main_content_title {
     max-inline-size: 315px;
-    
   }
 
   .block_multi {
