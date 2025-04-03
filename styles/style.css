@@ -150,7 +150,7 @@
 .main__content__title {
   color: var(--main-title-color);
   font-size: var(--main-font-size);
-  margin-block-start: 50px;
+  margin-block-start: 40px;
   margin-block-end: 20px;
   max-inline-size: 315px;
 }
