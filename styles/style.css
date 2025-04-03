@@ -142,6 +142,10 @@
   font-size: var(--main-font-size);
 }
 
+.title-decor-thin {
+  font-weight: 400;
+}
+
 .content__title {
   color: var(--section-heading-color);
   font-size: var(--main-font-size);
@@ -153,7 +157,7 @@
   margin-block-start: 40px;
   margin-block-end: 20px;
   max-inline-size: 315px;
-} 
+}
 
 .content_card_title {
   font-size: var(--main-font-size);
@@ -163,7 +167,7 @@
 
 .content__card__text {
   color: var(--main-text-color);
-  margin-block-start: 20px;
+  margin-block-start: 10px;
   margin-block-end: 20px;
 }
 
@@ -345,7 +349,7 @@
   }
 
   .main__block {
-    display:grid;
+    display: grid;
     grid-template-rows: min-content 1fr;
   }
 
@@ -360,5 +364,4 @@
   .block__gadgets {
     grid-row: 2;
   }
-
 }
