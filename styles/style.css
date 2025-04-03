@@ -251,7 +251,7 @@
 
   .main__section {
     margin-block-start: 70px;
-    gap: var(--main-gap);
+    column-gap: var(--main-gap);
   }
 
   .main__content {
@@ -260,7 +260,7 @@
     grid-auto-flow: row;
     justify-items: start;
     margin-block-start: 60px;
-    gap:0;
+   
   }
 
   .main__content__title {
@@ -358,7 +358,6 @@
   .main__block {
     display: grid;
     grid-template-rows: min-content 1fr;
-    row-gap: 0;
   }
 
   .block__multi {
