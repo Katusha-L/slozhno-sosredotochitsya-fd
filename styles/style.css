@@ -1,5 +1,4 @@
 .page {
-  margin: 0 auto;
   font-size: var(--main-font-size);
   font-family: var(--main-font-family), monospace;
   line-height: var(--main-line-height);
@@ -132,7 +131,7 @@
 
 .content {
   display: block;
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
   line-height: var(--main-line-height);
   font-size: var(--main-font-size);
 }
@@ -229,6 +228,10 @@
   .header_rec {
     right: 48px;
     top: 20px;
+  }
+
+  .content {
+    padding: 0 20px 0 20px;
   }
 
   .main__section {
