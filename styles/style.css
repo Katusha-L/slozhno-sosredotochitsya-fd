@@ -264,8 +264,6 @@
   }
 
   .main__content__title {
-    margin-block-start: 0;
-    margin-block-end: 20px;
     max-inline-size: 236px;
   }
 
