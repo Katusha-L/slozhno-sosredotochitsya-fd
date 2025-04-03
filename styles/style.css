@@ -250,6 +250,7 @@
   }
 
   .main__section {
+    margin-block-start: 80px;
     column-gap: var(--main-gap);
   }
 
@@ -346,6 +347,10 @@
   .header__theme-menu-list {
     flex-direction: row;
     justify-self: center;
+  }
+
+  .main__section {
+    margin-block-start: 50px;
   }
 
   .main__content__title {
