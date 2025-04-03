@@ -358,6 +358,7 @@
   .main__block {
     display: grid;
     grid-template-rows: min-content 1fr;
+    row-gap: 0;
   }
 
   .block__multi {
