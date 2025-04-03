@@ -250,7 +250,7 @@
   }
 
   .main__section {
-    margin-block-start: 70px;
+    margin-block-start: 60px;
     column-gap: var(--main-gap);
   }
 
@@ -259,8 +259,6 @@
     grid-template-columns: 1fr 2fr;
     grid-auto-flow: row;
     justify-items: start;
-    margin-block-start: 60px;
-   
   }
 
   .main__content__title {
