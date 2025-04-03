@@ -41,7 +41,7 @@
   font-weight: 400;
   line-height: 25px;
   color: var(--accent-color);
-  right: 38px;
+  right: 35px;
   top: 10px;
 }
 
@@ -153,7 +153,7 @@
   margin-block-start: 40px;
   margin-block-end: 20px;
   max-inline-size: 315px;
-}
+} 
 
 .content_card_title {
   font-size: var(--main-font-size);
@@ -164,6 +164,10 @@
 .content__card__text {
   color: var(--main-text-color);
   margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+
+.unit__subtitle {
   margin-block-end: 20px;
 }
 
@@ -226,7 +230,7 @@
   }
 
   .header_rec {
-    right: 48px;
+    right: 45px;
     top: 20px;
   }
 
@@ -250,10 +254,6 @@
     margin-block-start: 0;
     margin-block-end: 20px;
     max-inline-size: 236px;
-  }
-
-  .content__card__title:first-child {
-    margin-block-start: 0;
   }
 
   .content__hormones {
@@ -340,6 +340,10 @@
     justify-self: center;
   }
 
+  .main__content__title {
+    max-inline-size: 315px;
+  }
+
   .main__block {
     display:grid;
     grid-template-rows: min-content 1fr;
@@ -356,4 +360,5 @@
   .block__gadgets {
     grid-row: 2;
   }
+
 }
