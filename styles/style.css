@@ -250,7 +250,6 @@
   }
 
   .main__section {
-    margin-block-start: 60px;
     column-gap: var(--main-gap);
   }
 
