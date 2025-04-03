@@ -260,6 +260,7 @@
     grid-auto-flow: row;
     justify-items: start;
     margin-block-start: 60px;
+    gap:0;
   }
 
   .main__content__title {
