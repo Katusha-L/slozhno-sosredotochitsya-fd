@@ -252,28 +252,22 @@
   .main__section {
     margin-block-start: 70px;
     column-gap: var(--main-gap);
+    grid-auto-flow: column;
   }
 
   .main__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-block-start: 60px;
-    grid-auto-flow: row;
   }
 
   .main__content__title {
     max-inline-size: 236px;
   }
 
-  .content__hormones {
-    grid-column: 2;
-  }
-
   .main__unit {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr min-content;
-    grid-auto-flow: column;
   }
 
   .unit__title {
