@@ -261,7 +261,6 @@
   .main__section {
     margin-block-start: 60px;
     column-gap: var(--main-gap);
-    grid-auto-flow: column;
   }
 
   .main__content {
@@ -369,6 +368,7 @@
   .main__block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns:1fr;
   }
 
   .block__multi {
